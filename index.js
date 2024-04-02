@@ -14,9 +14,10 @@ app.post("/", jsonParser, function (req, res) {
   bit0 = req.body.liga;
   bit1 = req.body.desliga;
   bit2 = req.body.restart;
+  console.log(bit0, bit1, bit2)
   res.end();
 });
-  console.log(bit0, bit1, bit2)
+  
 
 app.get("/", function (req, res) {
   res.writeHead(200, { "Content-Type": "application/json", mode: "cors" });
