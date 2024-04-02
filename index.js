@@ -24,7 +24,7 @@ app.get("/", function (req, res) {
     JSON.stringify({
       liga: bit0,
       desliga: bit1,
-      restart: bit2,
+      restart: bit2
     })
   );
   res.end();
